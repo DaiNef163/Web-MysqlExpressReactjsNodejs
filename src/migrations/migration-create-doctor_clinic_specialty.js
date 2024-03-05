@@ -3,12 +3,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('doctor_clinic_specialty', {
-      // firstName: DataTypes.STRING,
-      // lastName: DataTypes.STRING,
-      // email: DataTypes.STRING,
-      // address: DataTypes.STRING,
-      // gender: DataTypes.BOOLEAN,
-      // roleid: DataTypes.STRING,
+
       id: {
         allowNull: false,
         autoIncrement: true,
