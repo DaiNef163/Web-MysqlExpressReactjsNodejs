@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get CRUD</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+        <th>RoleID</th>
+        <th>positionID</th>
+      </tr>
+      <% for (let i = 0; i < dataTable.length;  i++) { %>
+        <tr>
+          <td><%= dataTable[i].id || 'null' %></td>
+          <td><%= dataTable[i].email || 'null' %></td>
+          <td><%= dataTable[i].firstName || 'null' %></td>
+          <td><%= dataTable[i].lastName || 'null' %></td>
+          <td><%= dataTable[i].address || 'null' %></td>
+          <td><%= dataTable[i].phonenumber || 'null' %></td>
+          <td><%= dataTable[i].roleId || 'null' %></td>
+          <td><%= dataTable[i].positionID || 'null' %></td>
+        </tr>    
+       <% } %>
+
+    </table>
+  </body>
+</html>
